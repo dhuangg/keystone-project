@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block content
+	script. 
+		$('body').css({'background-color':'black'});
+		$('.navbar').addClass("hidden");
+	.mainview
+		.container
+			.row
+				.col-md-6
+					h6 .
+				.col-md-6
+					#intro
+						h1 hi, i'm <span style="color:#3498db">daniel<span> 
+						h5(style="margin-left:20px;") > ucla econ person and a front-end developer for fun.
+					#doStuff
+						h2 i do stuff that may interest you 
+						#stuff.col-md-12.col-offset-5
+							-var things = [{ action: "improving tech ", word: "education",link:"https://codercentral.org"}, {  action: "for ", word: "consulting",link:"#"}, { action: "in ", word:"japan",link:"japan"}, {action:"with ",word:"data and internet",link:"#"}]
+							for stuff in things
+								h3 <a href=#{stuff.link}> > stuff #{stuff.action} <span id=#{stuff.word}> #{stuff.word} <span> </a>
+						h2 i also <a href="blog">write</a> about stuff that interest me

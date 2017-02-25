@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'helveticabold';
+  src: url('../../fonts/helvetica-bold-webfont.woff2') format('woff2'),
+  url('../../fonts/helvetica-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#header {	  margin-top: 30px;  }
+
+#footer {
+	margin-top: 30px;
+	//border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+}
+
+.gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.black{background-color:black;}
+
+//navigation bar
+.navbar{
+  background-color:transparent;
+  border:transparent;
+  a{color:black;}
+  a:hover{color:black;}
+}
+
+@myBolder: 500;
+//stuff for the homepage
+.mainview{
+  background-color:black;
+  color:white;
+  .circle {
+	position: relative;
+	border-radius: 50%;
+	height: 50%;
+	padding-top: 100%;
+	background: white;
+  }
+  #intro{
+	margin-top:16vh;
+	font-family:helveticabold,sans-serif;
+	h1{font-size:6vw!important;font-weight:900;}
+  }
+  #doStuff{
+	margin-top:50px;
+	h2,h3{font-size:1.5vw;font-weight:@myBolder;font-family:"Helvetic Neue",sans-serif; }
+	#stuff{  
+	  color: #4d4d4d;  
+	  cursor:pointer; 
+	  margin-top:-15px; 
+	  margin-bottom:40px;
+	  h3:hover{
+		color:white;
+		#education{color:#2ecc71}
+		#consulting{color:#3498db}
+		#japan{color:red;}
+		#data{color:#9b59b6}
+	  }
+	  a{text-decoration:none;color:inherit;}
+	  a:hover{color:inherit;}
+	}
+
+  }
+  a{color:inherit; text-decoration:underline;}
+  a:hover{text-decoration:none;color:inherit}
+}
+
+//blog stuff
+.blog{
+  #intro{  
+	font-weight: 900; 
+	color:black; 
+	font-size:6em;
+	text-transform: lowercase;
+	font-family:helveticabold,"Helvetic Neue",sans-serif;
+  }
+  #postTitle{ 
+	font-weight:900; 
+	text-transform: lowercase; 
+	font-size:3.3vw;
+	font-family:"Helvetic Neue", Helvetica, Arial,sans-serif!important;
+  }
+  .lead{font-size:1vw;}
+  .post{
+	font-size:1.2vw; 
+	color: #282828; 
+	font-family:"Helvetica Neue Light","Helvetic Neue",sans-serif;
+  }
+  a{ color: #060606
+  }
+  a:hover{ color: black  }  
+  .divider{ 
+	border:1px solid #ecf0f1;
+	margin:30px auto 10px auto;
+	width:80%;
+  }
+}
+
+//blog post
+header h1{
+  color:black;
+  font-size:6vw;
+  font-family:helveticabold,sans-serif;
+}
+.post{
+  font-size:1.5vw;
+  color:black;
+  h2{
+	font-weight:900; 
+	font-size:3vw;
+	font-family:helveticabold,sans-serif;
+	margin-top:1.2em;
+	margin-bottom:15px;
+  }
+  p,ul,ol{font-family:"Helvetica Neue Light","Helvetic Neue",sans-serif;color: #444444  }
+}
+.img-wrap{
+  width:100%;
+  margin-bottom:20px;
+  .img{  margin:auto;  display:block;  }
+}
